@@ -19,6 +19,6 @@ def BuildPage():
 
     HtmlFile = open("IWD_Part3.html", 'r', encoding='utf-8')
     source_code = HtmlFile.read()
-    components.html(source_code, height = 800, width = 1000)
+    components.html(source_code, height = 800, width = 900)
 
 BuildPage()
