@@ -3,7 +3,6 @@ import streamlit.components.v1 as components
 
 st.set_page_config(layout='wide')
 
-@st.cache_data
 def BuildPage():
 
     hide_streamlit_style = """
