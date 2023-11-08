@@ -14,7 +14,7 @@ def BuildPage():
     
     st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
-    st.header("Part 2: Where are Indigenous populations in Canada")
+    st.header("Part 2: Where are Indigenous populations in Canada?")
 
     HtmlFile = open("Canada.html", 'r', encoding='utf-8')
     source_code = HtmlFile.read()
