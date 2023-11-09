@@ -12,17 +12,29 @@ def BuildPage():
                 </style>
                 """
     
-    st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+    
+    st.header("Part 1: What proportion of Canadians identify as Indigenous?")
+
+    HtmlFile = open("map.html", 'r', encoding='utf-8')
+    source_code = HtmlFile.read()
+    components.html(source_code, height = 800, width = 900)
 
     st.header("Part 2: Where are Indigenous populations in Canada?")
 
-    HtmlFile = open("Canada.html", 'r', encoding='utf-8')
+    HtmlFile = open("map.html", 'r', encoding='utf-8')
+    source_code = HtmlFile.read()
+    components.html(source_code, height = 800, width = 900)
+
+    st.header("Part 2 (Additional): Demographics of Top-3 Provinces in Terms of Indigenous Population")
+    
+    HtmlFile = open("subplots.html", 'r', encoding='utf-8')
     source_code = HtmlFile.read()
     components.html(source_code, height = 800, width = 900)
 
     st.header("Part 3: How mental health relates to suicidal ideation in Indigenous and non-Indigenous populations?")
 
-    HtmlFile = open("IWD_Part3.html", 'r', encoding='utf-8')
+    HtmlFile = open("scatter.html", 'r', encoding='utf-8')
     source_code = HtmlFile.read()
     components.html(source_code, height = 800, width = 900)
 
