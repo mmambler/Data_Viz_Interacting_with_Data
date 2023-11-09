@@ -16,7 +16,7 @@ def BuildPage():
     
     st.header("Part 1: What proportion of Canadians identify as Indigenous?")
 
-    HtmlFile = open("map.html", 'r', encoding='utf-8')
+    HtmlFile = open("donut.html", 'r', encoding='utf-8')
     source_code = HtmlFile.read()
     components.html(source_code, height = 800, width = 900)
 
